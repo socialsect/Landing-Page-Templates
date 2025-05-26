@@ -7,6 +7,9 @@ import HeroSection from '../components/home/HeroSection';
 import FeaturesSection from '../components/home/FeaturesSection';
 import PricingSection from '../components/home/PricingSection';
 import CTASection from '../components/home/CTASection';
+import Testimonials from '../components/home/Testimonials';
+import FAQ from '../components/home/FAQ';
+import BlogPreview from '../components/home/BlogPreview';
 
 const PublicPage = () => {
   const location = useLocation();
@@ -40,6 +43,9 @@ const PublicPage = () => {
           <HeroSection />
           <FeaturesSection />
           <PricingSection />
+          <Testimonials />
+          <FAQ />
+          <BlogPreview />
           <CTASection />
         </main>
       </div>

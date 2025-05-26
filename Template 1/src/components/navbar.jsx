@@ -19,7 +19,7 @@ export default function Navbar() {
             onClick={handleScrollToTop}
             className="cursor-pointer"
           >
-            <h3 className="brand-name">The Besson Group</h3>
+            <h3 className="brand-name">The Real Estate Group</h3>
           </Link>
         </div>
       </div>

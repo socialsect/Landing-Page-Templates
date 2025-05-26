@@ -5,9 +5,9 @@ import { TiSocialFacebookCircular } from "react-icons/ti";
 import { AiOutlineYoutube } from "react-icons/ai";
 export default function SocialLinks() {
   const socialLinks = [
-    { icon: FaInstagram, label: 'Instagram', url: "https://www.instagram.com/thebessongroup" },
-    { icon: TiSocialFacebookCircular, label: 'Facebook', url: "https://www.facebook.com/p/The-Besson-Group-I-Real-Estate-61570294342433" },
-    { icon: AiOutlineYoutube, label: 'Youtube', url: "https://www.youtube.com/@thebessongroup" }
+    { icon: FaInstagram, label: 'Instagram', url: "https://www.instagram.com/" },
+    { icon: TiSocialFacebookCircular, label: 'Facebook', url: "https://www.facebook.com/" },
+    { icon: AiOutlineYoutube, label: 'Youtube', url: "https://www.youtube.com/" }
   ];
 
   return (

@@ -11,7 +11,7 @@ export default function Contact() {
         </p>
         
         <a 
-          href="mailto:info@thebessongroup.com"
+          href="mailto:sale@gosocialsect.com"
           className="inline-flex items-center px-8 py-4 bg-luxury-red hover:bg-red-800 transition-colors duration-300 group"
         >
           <Mail className="mr-2 group-hover:scale-110 transition-transform duration-300" size={20} />

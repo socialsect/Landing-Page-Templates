@@ -19,8 +19,8 @@ export default function About() {
           <div className="relative">
             <div className="absolute -inset-4 bg-gradient-to-r from-luxury-gold/10 to-transparent rounded-lg blur-3xl"></div>
             <img 
-              src="/naomi.JPG" 
-              alt="Naomi" 
+              src="/image.png" 
+              alt="Deepinder" 
               className="w-full max-w-md rounded-lg shadow-2xl"
               style={{
                 height: '100%',
@@ -34,7 +34,7 @@ export default function About() {
 
           <div className="text-center">
             <p className="text-lg leading-relaxed mb-6 font-light">
-              Hi, I'm Naomi, a licensed real estate professional with a passion for helping people find their perfect home in Florida. With years of experience and a commitment to trust and transparency, I look forward to serving you soon!
+              Hi, I'm Deepinder, a licensed real estate professional with a passion for helping people find their perfect home in the US. With years of experience and a commitment to trust and transparency, I look forward to serving you soon!
             </p>
             
             <div className="mt-6 flex justify-start">
