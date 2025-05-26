@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;600&family=Open+Sans:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styles to prevent horizontal overflow */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* Ensure all elements don't exceed their container width */
+img, video, iframe, object, embed {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prevent horizontal scrolling on mobile */
+body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+/* Fix for iOS viewport units */
+@supports (-webkit-touch-callout: none) {
+  .h-screen {
+    height: -webkit-fill-available;
+  }
+}
+
+/* Ensure all containers don't cause overflow */
+.container, .container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Fix for flex items causing overflow */
+.flex {
+  min-width: 0;
+}
+
+/* Fix for grid items causing overflow */
+.grid {
+  min-width: 0;
+}
+
+/* Fix for text overflow */
+h1, h2, h3, h4, h5, h6, p {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-word;
+  word-break: break-word;
+}
+
+/* Fix for pre and code blocks */
+pre, code {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+@font-face {
+  font-family: 'Melloida ExtraBold';
+  src: url('./assets/MelloidaDEMO-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* FUD Grotesk, to be loaded from /assets/FUDGrotesk.otf once provided */
+@font-face {
+  font-family: 'FUD Grotesk';
+  src: url('./assets/Ilya Bazhanov - FUD Grotesk Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FUD Grotesk';
+  src: url('./assets/Ilya Bazhanov - FUD Grotesk Semi Bold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FUD Grotesk';
+  src: url('./assets/Ilya Bazhanov - FUD Grotesk Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FUD Grotesk';
+  src: url('./assets/Ilya Bazhanov - FUD Grotesk Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FUD Grotesk';
+  src: url('./assets/Ilya Bazhanov - FUD Grotesk Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hanson-Bold';
+  src: url('./assets/Hanson-Bold.otf') format('opentype'),
+       url('./assets/Hanson-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+:root{
+  background-color: black;
+}

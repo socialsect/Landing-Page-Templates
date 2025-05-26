@@ -1,0 +1,158 @@
+/* Base Section Styles */
+.how-it-works-section {
+  padding: 5rem 1rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.how-it-works-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.how-it-works-title {
+  font-family: 'Hanson-Bold', sans-serif;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  color: #724cf9;
+  margin-bottom: 3rem;
+}
+
+/* Step List */
+.how-it-works-steps {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.9rem;
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 4rem;
+  max-width: 1100px;
+  overflow: visible;
+}
+
+/* Arrows between steps (desktop only) */
+/* @media (min-width: 993px) {
+  .how-it-works-steps::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: calc(33.33% - 15px);
+    transform: translateY(-50%);
+    width: 66.66%;
+    height: 2px;
+    background: linear-gradient(to right, #724cf9 0%, #5a37e0 100%);
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.3;
+  }
+
+  .step:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: calc(100% - 15px);
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background: #724cf9;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+    transform: rotate(45deg);
+    z-index: 1;
+    opacity: 0.3;
+  }
+} */
+
+/* Individual Step Card */
+.step {
+  background: white;
+  padding: 2.5rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  position: relative;
+  z-index: 1;
+  flex: 1 1 calc(33% - 2rem);
+  min-width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Step Number Circle */
+.step-number {
+  font-size: 2.5rem;
+  color: #724cf9;
+  font-weight: 700;
+  background: #f8f9fa;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.step:hover .step-number {
+  background: #f0f1f5;
+  color: #8a66fb;
+}
+
+/* Step Title */
+.step-title {
+  font-size: clamp(1.1rem, 3vw, 1.4rem);
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+/* Step Description */
+.step-description {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  color: #666;
+  line-height: 1.6;
+  padding: 0 0.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .how-it-works-steps {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .step {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 2rem;
+  }
+
+  .step:last-child {
+    margin-bottom: 0;
+  }
+
+  .step::before,
+  .how-it-works-steps::after {
+    display: none;
+  }
+}
+
+/* Hover Effects */
+.step:hover .step-number {
+  background: #f0f1f5;
+  color: #8a66fb;
+}
+
+.step:hover .step-title {
+  color: #8a66fb;
+}

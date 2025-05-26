@@ -1,0 +1,100 @@
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 2rem;
+   background-image: url('/fallback.png');
+   background-color: #fff;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.hero > div:first-child {
+  flex: 1;
+  color: white;
+  animation: colorToggle 5s infinite alternate;
+  text-align: left;
+}
+
+.hero > div:last-child {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@keyframes colorToggle {
+  0% {
+    color: white;
+  }
+  100% {
+    color: #695af2;
+  }
+}
+
+.hero-title {color: #724cf9;
+  font-family: 'FUD Grotesk';
+  font-weight: 700;
+  line-height: 1.2;
+  /* letter-spacing: 1px; */
+  font-size: 6rem;
+  margin-bottom: 1rem;
+}
+
+#ptags {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  color: black;
+}
+
+.cta-button {
+  background: #aa1e2c;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  font-weight: bold;
+  font-family: 'Inter', sans-serif;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.counters {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 12px;
+  color: white;
+  width: 100%;
+  max-width: 400px;
+}
+
+.stat-boxes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.stat-boxes div {
+  background: #1a1a1a;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(170, 30, 44, 0.5);
+  margin: 10px;
+  width: 30%;
+  min-width: 100px;
+  font-size: larger;
+  font-family: FUD Grotesk;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.statvalues {
+  font-family: FUD Grotesk;
+  font-weight: 800;
+  font-size: 2rem;
+  color: white;
+}
