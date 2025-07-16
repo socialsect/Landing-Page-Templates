@@ -14,7 +14,7 @@ export default function Hero() {
             <span className="text-luxury-red font-medium ml-1">SOON</span>
           </h1>
           <p className="text-lg md:text-2xl font-light tracking-wide text-gray-200">
-            The Besson Group's website is under construction. Stay tuned!
+            The Real Estate Group's website is under construction. Stay tuned!
           </p>
         </div>
 
